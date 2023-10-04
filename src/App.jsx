@@ -5,10 +5,18 @@ export default function App(){
 
 const [numero, setNumero] = useState (0)
 
-const Aumentar= () => {setNumero(numero + 1)}
-
-const Diminuir= () => {setNumero(numero - 1)}
-
+const Aumentar = () =>{
+    if(numero < 10){
+    setNumero(numero + 1)
+  }
+  }
+  
+  const Diminuir = () =>{
+    if(numero > 0){
+    setNumero(numero - 1)
+  }
+  }
+  
 
     return(
         <>
